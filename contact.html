@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact US</title>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <div class="container-1">
+      <div class="navbar">
+          <div class="logo">
+              <a href="index.html"> <img src="logo.png" width="100px"></a>
+          </div>
+          <nav>
+              <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Prodcuts</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="contact.html">Contact US</a></li>
+                  <li><a href="account.html">Accounts</a></li>
+              </ul>
+              <a href="cart.html"><img src="cart.png" width="25px" height="25px"></a>
+              <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+          </nav>
+      </div>
+  </div>
+  <!-- contact us section -->
+    <section class="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="container">
+        <div class="contactinfo">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>
+                Street No 4232 Iqbal Road <br />Main Building Jinnah Avenue<br />
+                Lahore
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>34344-333-445-333</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>ShopIsonline@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactform">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputbox">
+              <input type="text" name="" placeholder="" required="required">
+              <span>Full Name</span>
+            </div>
+            <div class="inputbox">
+              <input type="text" name="" placeholder="" required="required">
+              <span>Email Address</span>
+            </div>
+            <div class="inputbox">
+              <textarea required="required"></textarea>
+              <span>Type Your Message</span>
+            </div>
+            <div class="inputbox">
+              <input type="submit" name="" value="Send">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+
+
+
+  <!-- javascript section -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</html>
